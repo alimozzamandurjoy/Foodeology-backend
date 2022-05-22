@@ -6,9 +6,11 @@ from .models import *
 
 def index(request):
     item_objects= Item.objects.all()
-    item_name= request.GET.get('item_name')
+    item_title= request.GET.get('search')
+    pizza= request.GET.get('P')
 
-    # if item_name != '' and item_name is not None:
-    #     item_objects= item_objects.filter(title__icontains= item_name)
+    if item_title != '' and item_title is not None:
+        item_objects= item_objects.filter(name__icontains= item_title)
+    
     return render(request,'food/index.html',{'item_objects':item_objects})
 

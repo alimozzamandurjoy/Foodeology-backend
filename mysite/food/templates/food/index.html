@@ -21,13 +21,14 @@
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand me-5" href="#"><span class="c1"><i>Food</i></span><span
+        <a class="navbar-brand me-5" href="{% url 'index' %}"><span class="c1"><i>Food</i></span><span
             class="c2"><i>eologyo</i></span></a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
           <form class="d-flex">
-            <input class="form-control " size="100" type="search" placeholder="Search Categories or Menu..."
+            {% csrf_token %}
+            <input class="form-control " method="get" size="100" type="search" name="search" placeholder="Search Categories or Menu..."
               aria-label="Search">
             <button class="btn " style="background-color: #fdb82c" type="submit"><i class="fas fa-search"></i></button>
             <button class="btn mx-3" style="background-color: #fdb82c" type="submit"><i
@@ -170,7 +171,7 @@
                   All</span></p>
               <div class="row">
                 <button class="btn c6" type="button">🍴 All Items</button>
-                <button class="btn c6" type="button">🍕 Pizza</button>
+                <button class="btn c6" type="button" name="P">🍕 Pizza</button>
                 <button class="btn c6" type="button">🍔 Burger</button>
                 <button class="btn c6" type="button">🍚 Rice</button>
                 <button class="btn c6" type="button">🍨 Dessert</button>
@@ -184,7 +185,7 @@
           {% for item_object in item_objects %}
           <div class="col-md-4" style="margin-bottom: 20px;">
             <div class="card h-100 c8">
-              <img src= "{{ item_object.img.path }}" class="card-img-top" alt="...">
+              <img src= "{{item_object.img.url}}" class="card-img-top" alt="...">
               <div class="card-body">
                 <center>
                   <h5 class="card-title">{{ item_object.name }}</h5>
