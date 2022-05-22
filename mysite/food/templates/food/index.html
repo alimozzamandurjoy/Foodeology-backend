@@ -1,0 +1,345 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'food/css/index.css' %}">
+
+  <title>Foodeology</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand me-5" href="#"><span class="c1"><i>Food</i></span><span
+            class="c2"><i>eologyo</i></span></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <form class="d-flex">
+            <input class="form-control " size="100" type="search" placeholder="Search Categories or Menu..."
+              aria-label="Search">
+            <button class="btn " style="background-color: #fdb82c" type="submit"><i class="fas fa-search"></i></button>
+            <button class="btn mx-3" style="background-color: #fdb82c" type="submit"><i
+                class="fas fa-qrcode"></i></button>
+            <button class="btn " style="background-color: #fdb82c" type="submit"><i class="far fa-bell"></i></button>
+            <button class="btn mx-3 shadow" style="background-color: #ff6565; color: white; font-size: 13px;width: 20%;"
+              type="button">+ Add New Item</i></button>
+          </form>
+        </div>
+        <div class="ml-5">
+          <h5>Order #246</h5>
+          <p class="text-muted ">opend 7:45 am</div>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="card shadow  bg-light">
+          <div> 
+            <center class="mb-3"><img class="c4" src="{% static 'food/images/avatar1.png' %}" alt=""></center>
+            <center>
+              <h5>Troy A Ewards</h5>
+              <p>I'm a cashier 🤑</p>
+            </center>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <div class="mx-3 ">
+                <button class="btn-lg c5" type="submit">
+                  <i class="fa-solid fa-house-user fa-2x"></i>
+                  <div class="text-muted">
+                    <p>Home</p>
+                  </div>
+                </button>
+
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mx-3 ">
+                <button class="btn-lg c5" type="submit">
+                  <i class="fa-solid fa-bag-shopping fa-2x"></i>
+                  
+                    <p class="text-muted">Order</p>
+                  
+                </button>
+
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <div class="mx-3 ">
+                <button class="btn-lg c5" type="submit">
+                  <i class="fa-solid fa-bell-concierge fa-2x"></i>
+                  <div class="text-muted">
+                    <p>Menu</p>
+                  </div>
+                </button>
+
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mx-3 ">
+                <button class="btn-lg c5" type="submit">
+                  <i class="fa-solid fa-wallet fa-2x"></i>
+                  <div class="text-muted">
+                    <p>Wallet</p>
+                  </div>
+                </button>
+
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <div class="mx-3 ">
+                <button class="btn-lg c5" type="submit">
+                  <i class="fa-solid fa-clock fa-2x"></i>
+                  <div class="text-muted">
+                    <p>History</p>
+                  </div>
+                </button>
+
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mx-3 ">
+                <button class="btn-lg c5" type="submit">
+                  <i class="fa-solid fa-house-user fa-2x"></i>
+                  <div class="text-muted">
+                    <p>promo</p>
+                  </div>
+                </button>
+
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <div class="mx-3 ">
+                <button class="btn-lg c5" type="submit">
+                  <i class="fas fa-money-bill-wave-alt fa-2x"></i>
+                  <div class="text-muted">
+                    <p>Bills</p>
+                  </div>
+                </button>
+
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mx-3 ">
+                <button class="btn-lg c5" type="submit">
+                  <i class="fas fa-cog fa-2x"></i>
+                  <div class="text-muted">
+                    <p>Setting</p>
+                  </div>
+                </button>
+
+              </div>
+            </div>
+          </div>
+          <div>
+            <center><img src="{% static 'food/images/pan1.png' %}" width="150px" alt=""></center>
+            <center><button class="c7">Go to Premium</button></center>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-7">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <p style="font-size: 16px;padding-left: 15px;"><b>Choose Catagories</b> <span
+                  style="color:rgb(248, 40, 75); font-size: 12px;">42+ catagories</span> <span class="right">View
+                  All</span></p>
+              <div class="row">
+                <button class="btn c6" type="button">🍴 All Items</button>
+                <button class="btn c6" type="button">🍕 Pizza</button>
+                <button class="btn c6" type="button">🍔 Burger</button>
+                <button class="btn c6" type="button">🍚 Rice</button>
+                <button class="btn c6" type="button">🍨 Dessert</button>
+                <button class="btn c6" type="button">☕ Coffee</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          {% for item_object in item_objects %}
+          <div class="col-md-4" style="margin-bottom: 20px;">
+            <div class="card h-100 c8">
+              <img src= "{{ item_object.img }}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <center>
+                  <h5 class="card-title">{{ item_object.name }}</h5>
+                  <p>{{ item_object.price }}</p>
+                </center>
+                <div class="btn-group c9" role="group" aria-label="Basic example">
+                  <button type="button "  class="btn c22">S</button>
+                  <button type="button " class="btn c22">M</button>
+                  <button type="button " class="btn c22">L</button>
+
+                </div>
+                <button type="button" class="btn" style="background-color: #ff6565;color: white ;">Add</button>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+
+
+      <div class="col-md-3">
+        <div class="card">
+          <p class="mt-2 p-2"><b>New Order Bill</b> <span class="right text-muted" style="font-size: 12px;"><b>sunday,28
+                October 2022</b></span></p>
+          <hr>
+          <div class="card c11 mx-2">
+            <div class="row">
+              <div class="col-md-2">
+                <center><img src="images/b2.2.png" alt="" width="80px"
+                    style="border-radius: 20px; margin-left:5px; background: none;"></center>
+
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-6">
+                <p><b>Chicken Whooper</b></p>
+                <p style="line-height: 5px;">$14.00</p>
+              </div>
+              <div class="col-md-3">
+                <div class="bg-white mt-3 me-3 d-flex justify-content-center align-items-center"
+                  style="border-radius: 50px; width: 59px; height: 30px;">
+                  <div><button class="d-flex justify-content-center align-items-center"
+                    style="border: none; background-color: #fdb82c; border-radius: 50px; color: white; font-size: 20px; height: 20px;">-</button></div>
+                  <div class="mx-1">1</div>
+                  <div><button class="d-flex justify-content-center align-items-center"
+                    style="border: none; background-color: #fdb82c; border-radius: 50px; color: white; font-size: 18px; height: 20px;">+</button></div>
+                </div>
+                <p class="ms-2 c20" style="font-size: 13px;">Remove</p>
+              </div>
+            </div>
+          </div>
+          <div class="card my-2 mx-2 c11">
+            <div class="row">
+              <div class="col-md-2">
+                <center><img src="images/c1.0.png" alt="" width="50px" height="50px"
+                    style="border-radius: 20px; margin-left:5px; background: none;"></center>
+
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-6">
+                <p><b>Cup cake</b></p>
+                <p style="line-height: 5px;">$12.00</p>
+              </div>
+              <div class="col-md-3">
+                <div class="bg-white mt-3 me-3 d-flex justify-content-center align-items-center"
+                  style="border-radius: 50px; width: 59px; height: 30px;">
+                  <div><button class="d-flex justify-content-center align-items-center"
+                    style="border: none; background-color: #fdb82c; border-radius: 50px; color: white; font-size: 20px; height: 20px;">-</button></div>
+                  <div class="mx-1">1</div>
+                  <div><button class="d-flex justify-content-center align-items-center"
+                    style="border: none; background-color: #fdb82c; border-radius: 50px; color: white; font-size: 18px; height: 20px;">+</button></div>
+                </div>
+                <p class="ms-2 c20" style="font-size: 13px;">Remove</p>
+              </div>
+            </div>
+          </div>
+          <div class="card c11 mx-2">
+            <div class="row">
+              <div class="col-md-2">
+                <center><img src="images/p1.png" alt="" width="80px"
+                    style="border-radius: 20px; margin-left:5px; background: none;"></center>
+
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-6">
+                <p><b>Farm Villa</b></p>
+                <p style="line-height: 5px;">$16.00</p>
+              </div>
+              <div class="col-md-3">
+                <div class="bg-white mt-3 me-3 d-flex justify-content-center align-items-center"
+                  style="border-radius: 50px; width: 59px; height: 30px;">
+                  <div><button class="d-flex justify-content-center align-items-center"
+                    style="border: none; background-color: #fdb82c; border-radius: 50px; color: white; font-size: 20px; height: 20px;">-</button></div>
+                  <div class="mx-1">2</div>
+                  <div><button class="d-flex justify-content-center align-items-center"
+                    style="border: none; background-color: #fdb82c; border-radius: 50px; color: white; font-size: 18px; height: 20px;">+</button></div>
+                </div>
+                <p class="ms-2 c20" style="font-size: 13px;">Remove</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="c14">
+            <p>Sub Total <span class="price"><b>$50.00</b></span></p>
+            <p>Tax 10% (VAT included) <span class="price"><b>$5.00</b></span></p>
+            <div class="c15"></div>
+            <p class="mt-2">Total <span class="price"><b style="color: green;">$55.00</b></span></p>
+          </div>
+
+          <div class="c16">
+            <p><b>Payment Method</b></p>
+
+            <div>
+              <div class="row">
+                <div class="col-md-4">
+                  <p class="c17 text-center"><i class="fa-solid fa-2x fa-circle-dollar-to-slot"></i></p>
+                  <p style="line-height: 2px; text-align: center;">Cash</p>
+                </div>
+                <div class="col-md-4">
+                  <p class="c17 text-center"><i class="fa-solid fa-credit-card fa-2x"></i></p>
+                  <p style="line-height: 2px; text-align: center;">Debit Card</p>
+                </div>
+                <div class="col-md-4">
+                  <p class="c17 text-center"><i class="fa-solid fa-qrcode fa-2x"></i></p>
+                  <p style="line-height: 2px; text-align: center; ">E-Wallet</p>
+                </div>
+              </div>
+              <div>
+                <button class="c19 btn">
+                  Place Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/651ebc140e.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
