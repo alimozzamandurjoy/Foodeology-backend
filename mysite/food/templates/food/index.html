@@ -148,6 +148,7 @@
                   <div class="text-muted">
                     <p>Setting</p>
                   </div>
+                  
                 </button>
 
               </div>
@@ -183,7 +184,7 @@
           {% for item_object in item_objects %}
           <div class="col-md-4" style="margin-bottom: 20px;">
             <div class="card h-100 c8">
-              <img src= "{{ item_object.img }}" class="card-img-top" alt="...">
+              <img src= "{{ item_object.img.path }}" class="card-img-top" alt="...">
               <div class="card-body">
                 <center>
                   <h5 class="card-title">{{ item_object.name }}</h5>
