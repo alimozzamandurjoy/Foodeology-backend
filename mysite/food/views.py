@@ -7,10 +7,10 @@ from .models import *
 def index(request):
     item_objects= Item.objects.all()
     item_title= request.GET.get('search')
-    pizza= request.GET.get('P')
+    cat= Cat.objects.all()
 
     if item_title != '' and item_title is not None:
         item_objects= item_objects.filter(name__icontains= item_title)
     
-    return render(request,'food/index.html',{'item_objects':item_objects})
+    return render(request,'food/index.html',{'item_objects':item_objects, 'cat':cat})
 

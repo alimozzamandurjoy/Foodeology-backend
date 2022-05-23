@@ -170,12 +170,11 @@
                   style="color:rgb(248, 40, 75); font-size: 12px;">42+ catagories</span> <span class="right">View
                   All</span></p>
               <div class="row">
-                <button class="btn c6" type="button">🍴 All Items</button>
-                <button class="btn c6" type="button" name="P">🍕 Pizza</button>
-                <button class="btn c6" type="button">🍔 Burger</button>
-                <button class="btn c6" type="button">🍚 Rice</button>
-                <button class="btn c6" type="button">🍨 Dessert</button>
-                <button class="btn c6" type="button">☕ Coffee</button>
+                <button class="btn c6" type="button" action="">🍴 All Items</button>
+                {% for ca in cat %}
+                <button class="btn c6" type="button">{{ ca.catagory }}</button>
+                {% endfor %}
+                
               </div>
             </div>
           </div>
@@ -189,7 +188,7 @@
               <div class="card-body">
                 <center>
                   <h5 class="card-title">{{ item_object.name }}</h5>
-                  <p>{{ item_object.price }}</p>
+                  <p>$ {{ item_object.price }}</p>
                 </center>
                 <div class="btn-group c9" role="group" aria-label="Basic example">
                   <button type="button "  class="btn c22">S</button>

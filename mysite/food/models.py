@@ -11,6 +11,12 @@ CHOICES= (
 
 )
 
+class Cat(models.Model):
+    catagory= models.CharField(max_length=20)
+    def __str__(self):
+        return self.catagory
+
+
 class Item(models.Model):
     img= models.ImageField(upload_to='images')
     name= models.CharField(max_length=30)
@@ -18,6 +24,7 @@ class Item(models.Model):
     s_price= models.IntegerField()
     m_price= models.IntegerField()
     l_price= models.IntegerField()
-    items= models.CharField(choices=CHOICES,max_length=100)
+    items= models.ForeignKey(Cat, on_delete=models.CASCADE)
     def __str__(self):
         return self.name
+
